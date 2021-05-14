@@ -1,0 +1,10 @@
+# creates namespace named "tif-gateway-dev"
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: tif-gateway-dev
+  annotations:
+    configmanagement.gke.io/cluster-selector: tif-dev-clusters
+  labels:
+    istio-injection: enabled
+    environment-type: dev
