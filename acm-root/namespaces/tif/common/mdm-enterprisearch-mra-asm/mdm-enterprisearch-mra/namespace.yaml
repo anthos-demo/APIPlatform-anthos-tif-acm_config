@@ -1,0 +1,10 @@
+# creates namespace named "mdm-enterprisearch-mra"
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mdm-enterprisearch-mra
+  annotations:
+    configmanagement.gke.io/cluster-selector: tif--clusters
+  labels:
+    istio-injection: enabled
+    environment-type: 
