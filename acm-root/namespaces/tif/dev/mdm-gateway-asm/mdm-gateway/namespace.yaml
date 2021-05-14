@@ -1,0 +1,10 @@
+# creates namespace named "mdm-gateway"
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mdm-gateway
+  annotations:
+    configmanagement.gke.io/cluster-selector: tif-common-clusters
+  labels:
+    istio-injection: enabled
+    owned-by-businessunit: tif
