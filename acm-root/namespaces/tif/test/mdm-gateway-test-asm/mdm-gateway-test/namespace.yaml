@@ -1,0 +1,10 @@
+# creates namespace named "mdm-gateway-test"
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mdm-gateway-test
+  annotations:
+    configmanagement.gke.io/cluster-selector: tif-test-clusters
+  labels:
+    istio-injection: enabled
+    environment-type: test
