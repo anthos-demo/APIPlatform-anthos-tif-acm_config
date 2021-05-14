@@ -1,0 +1,10 @@
+# creates namespace named "tif-ecomm"
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: tif-ecomm
+  annotations:
+    configmanagement.gke.io/cluster-selector: tif-common-clusters
+  labels:
+    istio-injection: enabled
+    owned-by-businessunit: tif
